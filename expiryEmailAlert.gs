@@ -1,11 +1,11 @@
 // This script will take something's expiry date from the seventh column of a Google sheet and check to see if it is expiring today, in 2 weeks, or in 1 month.
-// It will then send an automated email to the provided email address alerting the impending expiration date.
+// It will then send an automated email to the provided email address alerting the impending expiration date. Use with a time-based trigger to run every day.
 
 // NB: If your expiry date is in a different column than column 6 (they start counting from 0), update the column numbers in lines 61 & 74.
 
 // NB: To limit the time spent searching, limit the active number of searched rows in line 59 to the rows of active data - code also assumes only one row of headers in line 55.
 
-// NB: Replace the email@gmail.com email with the address you wish to notify on lines 146, 178, and 207. Email message can be edited on lines 89-119; email subject is set in lines 144, 170, & 199.
+// NB: Replace the email with the address you wish to notify on lines 146, 178, and 207. Email message can be edited on lines 89-119; email subject is set in lines 144, 170, & 199.
 
 function expiryEmailAlert() {
 
